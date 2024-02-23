@@ -2,7 +2,7 @@ const {
     System,
     getAlive,
     setAlive,
-    alive,
+    hi,
     isPrivate
 } = require('../lib')
 
@@ -20,5 +20,5 @@ async (message, match) => {
     await setAlive(match);
     return await message.send('_Alive Updated_');
     }
-    return await alive(message,msg);
+    return await hi(message,msg);
 });
